@@ -10,7 +10,7 @@ namespace sweepstakes
     {
         public void CreateMarketingFirmWithManager()
         {
-
+            //Factory Manager created, use switch case
         }
     }
 }
