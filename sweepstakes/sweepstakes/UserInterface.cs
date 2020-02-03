@@ -20,7 +20,28 @@ namespace sweepstakes
 
         public static string GetUserInputFor(string prompt)
         {
-            return prompt;
+            switch (prompt.ToLower())
+            {
+                case "first":
+                    Console.WriteLine("Please enter your first name:");
+                    return Console.ReadLine();
+                case "last":
+                    Console.WriteLine("Please enter your last name:");
+                    return Console.ReadLine();
+                case "email":
+                    Console.WriteLine("Please enter your e-mail address:");
+                    return Console.ReadLine();
+                default:
+                    return "Please choose a valid option";                    
+            }            
+        }
+        public static void DisplayContestantInfo(string firstName, string lastName, string emailAddress, int registrationNumber)
+        {
+            Console.WriteLine("Contestant Information\n====================================");
+            Console.WriteLine("First Name: {0}", firstName);
+            Console.WriteLine("Last Name: {0}", lastName);
+            Console.WriteLine("E-mail Address: {0}", emailAddress);
+            Console.WriteLine("Registration Number: {0}\n", registrationNumber);
         }
     }
 }

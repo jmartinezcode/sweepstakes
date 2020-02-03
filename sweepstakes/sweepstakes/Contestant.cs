@@ -19,9 +19,9 @@ namespace sweepstakes
         public int RegistrationNumber { get; }
         public Contestant(int registrationNumber)
         {
-            firstName = UserInterface.GetUserInputFor("input"); //be more specific once UI created
-            lastName = UserInterface.GetUserInputFor("input");//be more specific once UI created
-            emailAddress = UserInterface.GetUserInputFor("input"); //be more specific once UI created
+            firstName = UserInterface.GetUserInputFor("first"); 
+            lastName = UserInterface.GetUserInputFor("last");
+            emailAddress = UserInterface.GetUserInputFor("email"); 
             this.registrationNumber = registrationNumber;
         }
     }
