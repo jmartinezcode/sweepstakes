@@ -43,5 +43,10 @@ namespace sweepstakes
             Console.WriteLine("E-mail Address: {0}", emailAddress);
             Console.WriteLine("Registration Number: {0}\n", registrationNumber);
         }
+        public static string GetSweepstakesName()
+        {
+            Console.WriteLine("Please choose a name for your Sweepstakes:");
+            return Console.ReadLine();
+        }
     }
 }

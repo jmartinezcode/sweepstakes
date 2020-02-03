@@ -12,6 +12,12 @@ namespace sweepstakes
         string name;
         public string Name { get; }
 
+        public Sweepstakes(string name)
+        {
+            contestants = new Dictionary<int, Contestant>();
+            this.name = name;
+        }
+
         public void RegisterContestant(Contestant contestant)
         {
             contestants.Add(contestants.Count, contestant);
@@ -26,8 +32,7 @@ namespace sweepstakes
         }
         public void PrintContestantInfo(Contestant contestant)
         {
-
-        }
-        
+            UserInterface.DisplayContestantInfo(contestant.FirstName, contestant.LastName, contestant.EmailAddress, contestant.RegistrationNumber);
+        }        
     }
 }
