@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sweepstakes
 {
-    public class MarketFactory
+    public class ManagerFactory
     {
 
         public ISweepstakesManager ChooseManagerType(string input)

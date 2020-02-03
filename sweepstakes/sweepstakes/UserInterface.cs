@@ -48,5 +48,10 @@ namespace sweepstakes
             Console.WriteLine("Please choose a name for your Sweepstakes:");
             return Console.ReadLine();
         }
+        public static string GetManagerType()
+        {
+            Console.WriteLine("Choose the type of Sweepstakes you would like to manage:");
+            return Console.ReadLine();
+        }
     }
 }
