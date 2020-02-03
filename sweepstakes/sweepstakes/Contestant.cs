@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sweepstakes
 {
-    public class Contestant
+    public class Contestant: IContestant
     {
         string firstName;
         string lastName;
@@ -24,5 +24,10 @@ namespace sweepstakes
             emailAddress = UserInterface.GetUserInputFor("email"); 
             this.registrationNumber = registrationNumber;
         }
+        public void Notify(IContestant contestant)
+        {
+            Console.WriteLine("The winner has been drawn, better luck next time, {0}!", contestant.FirstName);
+        }
+
     }
 }
