@@ -53,5 +53,9 @@ namespace sweepstakes
             Console.WriteLine("Choose the type of Sweepstakes you would like to manage:");
             return Console.ReadLine();
         }
+        public static void NotifyWinner(string firstName, string lastName)
+        {
+            Console.WriteLine("Congratulations, {0} {1}! You've won the sweepstakes!", firstName, lastName);
+        }
     }
 }

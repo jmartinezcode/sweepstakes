@@ -41,7 +41,7 @@ namespace sweepstakes
             {
                 if (winner.EmailAddress == key.Value.EmailAddress)
                 {
-                    winner.Notify(winner);
+                    UserInterface.NotifyWinner(winner.FirstName, winner.LastName);
                 }
                 else
                 {
